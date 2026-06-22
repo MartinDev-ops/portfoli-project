@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin's Portfolio</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- My styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ========== HEADER & NAV (no JavaScript — uses anchors + :target) ========== -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-dark">
+      <div class="container nav-wrap">
+
+        <a class="navbar-brand fw-bold" href="#home">Portfolio</a>
+
+        <!-- Mobile menu: native HTML details/summary (no JS) -->
+        <details class="nav-details d-lg-none">
+          <summary class="nav-menu-btn">Menu</summary>
+          <ul class="nav-links nav-links-mobile">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About Me</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </details>
+
+        <!-- Desktop menu -->
+        <ul class="nav-links nav-links-desktop d-none d-lg-flex">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About Me</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center text-white">
+        <h1 class="hero-title">I am Martin.</h1>
+        <p class="hero-subtitle">Web Developer</p>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ME ========== -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="about-card card border-0 shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <div class="row g-4 g-lg-5">
+
+              <!-- Left column -->
+              <div class="col-md-5 col-lg-4 text-center text-md-start">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                  alt="Profile photo of Martin"
+                  class="profile-img rounded-circle mb-4"
+                >
+
+                <ul class="list-unstyled contact-list mb-4">
+                  <li><strong>Name:</strong> Martin</li>
+                  <li><strong>Profile:</strong> Web Developer</li>
+                  <li><strong>Phone:</strong> +27 00 000 0000</li>
+                  <li><strong>Email:</strong> wangamartin17@gmail.com</li>
+                </ul>
+
+                <h3 class="h6 text-uppercase text-muted mb-3">Skills</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                  <span class="badge rounded-pill text-bg-primary">HTML</span>
+                  <span class="badge rounded-pill text-bg-primary">CSS</span>
+                  <span class="badge rounded-pill text-bg-primary">Bootstrap</span>
+                  <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+                  <span class="badge rounded-pill text-bg-primary">Git</span>
+                  <span class="badge rounded-pill text-bg-primary">Responsive Design</span>
+                </div>
+              </div>
+
+              <!-- Right column -->
+              <div class="col-md-7 col-lg-8">
+                <span class="highlight-label">About me</span>
+                <p class="about-text mt-3 mb-0">
+                  I am a web development student who enjoys turning ideas into clean, responsive web pages.
+                  I have built several front-end clone projects using HTML and CSS, including Tesla, Netflix,
+                  and YouTube layouts. I like learning by doing and improving my code step by step. My goal
+                  is to keep growing my skills and eventually work on real-world websites and apps. I pay
+                  attention to layout, spacing, and making sites work well on phones and desktops.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="projects-section py-5">
+      <div class="container">
+        <h2 class="text-center section-heading mb-2">My Projects</h2>
+        <p class="text-center text-muted mb-5">Front-end clones and practice builds</p>
+
+        <div class="row g-4">
+
+          <!-- Project 1: Tesla -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="images/Screenshot 2026-06-22 174017.png"
+                class="card-img-top project-img"
+                alt="Tesla landing page clone with electric cars hero section"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Tesla Clone</h3>
+                <p class="small text-muted">Built with HTML and CSS</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View Tesla clone code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: Netflix -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="images/Screenshot 2026-06-22 174117.png"
+                class="card-img-top project-img"
+                alt="Netflix landing page clone with movie poster background"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Netflix Clone</h3>
+                <p class="small text-muted">Built with HTML and CSS</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View Netflix clone code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: YouTube -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="images/Screenshot 2026-06-22 174143.png"
+                class="card-img-top project-img"
+                alt="YouTube homepage clone with video grid layout"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">YouTube Clone</h3>
+                <p class="small text-muted">Built with HTML, CSS and a little JavaScript</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View YouTube clone code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: Login Page -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=340&fit=crop"
+                class="card-img-top project-img"
+                alt="Login and sign up page design preview"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Login &amp; Sign Up Page</h3>
+                <p class="small text-muted">Built with HTML and CSS</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View login page code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 5: Hospital Website -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=340&fit=crop"
+                class="card-img-top project-img"
+                alt="Hospital website layout preview"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Hospital Website</h3>
+                <p class="small text-muted">Built with HTML and CSS</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View hospital website code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 6: Business Landing Page -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop"
+                class="card-img-top project-img"
+                alt="Business landing page layout preview"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Business Landing Page</h3>
+                <p class="small text-muted">Built with HTML and CSS</p>
+                <div class="mt-auto d-flex gap-2 align-items-center">
+                  <a href="#" class="btn btn-primary btn-sm">View Website</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm" aria-label="View business page code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="highlight-label">Let's connect</span>
+          <p class="mt-3 mb-4 invite-text">Feel free to reach out — I would love to hear from you.</p>
+
+          <div class="social-icons d-flex justify-content-center gap-3 mb-5">
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://github.com" class="social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form mx-auto" action="#" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer text-center py-3">
+    <p class="mb-0 small">Developed by Martin using Bootstrap, for portfolio purposes.</p>
+  </footer>
+
+  <!-- ========== PRINT-ONLY RESUME (Bonus) ========== -->
+  <section class="print-resume" aria-hidden="true">
+    <h1>Martin</h1>
+    <p class="resume-role">Web Developer</p>
+    <p>wangamartin17@gmail.com | +27 00 000 0000</p>
+
+    <h2>Skills</h2>
+    <p>HTML, CSS, Bootstrap, JavaScript, Git, Responsive Design</p>
+
+    <h2>About</h2>
+    <p>
+      Web development student focused on building responsive front-end projects.
+      Experienced with HTML/CSS layout clones including Tesla, Netflix, and YouTube.
+    </p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>Tesla Clone — HTML &amp; CSS landing page</li>
+      <li>Netflix Clone — HTML &amp; CSS streaming homepage</li>
+      <li>YouTube Clone — HTML, CSS &amp; JavaScript video layout</li>
+      <li>Login &amp; Sign Up Page — HTML &amp; CSS forms</li>
+      <li>Hospital Website — HTML &amp; CSS multi-page site</li>
+      <li>Business Landing Page — HTML &amp; CSS marketing page</li>
+    </ul>
+  </section>
+
+</body>
+</html>
