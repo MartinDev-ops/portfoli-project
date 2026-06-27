@@ -21,7 +21,7 @@
 }
 
 /* ===========================
-   Dark Mode (Bonus)
+   Dark Mode 
    =========================== */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -53,7 +53,7 @@
     color: #f1f1f1;
   }
 
-  /* Bootstrap keeps dark text — override for dark backgrounds */
+ 
   .card-body,
   .card-title,
   .contact-list,
@@ -94,9 +94,7 @@ body {
   top: 1rem;
 }
 
-/* ===========================
-   Navbar (CSS + :target only — no JavaScript)
-   =========================== */
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
 }
@@ -132,7 +130,7 @@ body {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Active link underline when section is in view (:target) */
+
 body:not(:has(:target)) .nav-link[href="#home"],
 body:has(#home:target) .nav-link[href="#home"],
 body:has(#about:target) .nav-link[href="#about"],
@@ -141,7 +139,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   border-bottom-color: var(--nav-active);
 }
 
-/* Mobile menu with details/summary */
+/* Mobile menu with details*/
 .nav-details {
   position: relative;
 }
@@ -172,9 +170,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   margin-top: 0.5rem;
 }
 
-/* ===========================
-   Hero Section
-   =========================== */
+/* Hero Section */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -215,9 +211,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   margin-bottom: 0;
 }
 
-/* ===========================
-   About Section
-   =========================== */
+/*About Section */
 .about-card {
   background-color: var(--card-bg);
   border-radius: 1rem;
@@ -250,9 +244,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   color: var(--text-color);
 }
 
-/* ===========================
-   Projects Section
-   =========================== */
+/*Projects Section*/
 .section-heading {
   font-weight: 700;
 }
@@ -285,9 +277,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   color: var(--card-bg);
 }
 
-/* ===========================
-   Contact Section
-   =========================== */
+/*Contact Section */
 .invite-text {
   color: var(--muted-text);
   font-size: 1.05rem;
@@ -339,24 +329,20 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   background-color: #0b5ed7;
 }
 
-/* ===========================
-   Footer
-   =========================== */
+/* Footer */
 .site-footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
 }
 
-/* ===========================
-   Print Resume (Bonus)
-   =========================== */
+/* Print Resume  */
 .print-resume {
   display: none;
 }
 
 @media print {
   .site-header,
-  .hero-section,
+  .hero-section,S
   .about-section,
   .projects-section,
   .contact-section,
