@@ -335,10 +335,7 @@ body:has(#contact:target) .nav-link[href="#contact"] {
   color: var(--footer-text);
 }
 
-/* Print Resume  */
-.print-resume {
-  display: none;
-}
+
 
 @media print {
   .site-header,
