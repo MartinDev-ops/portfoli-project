@@ -32,6 +32,3 @@ https://github.com/MartinDev-ops/portfoli-project.git
 ## Image Credits
 Images used are screenshots from projects I built myself.
 
-## Author
-
-**Martin Nethononda**
